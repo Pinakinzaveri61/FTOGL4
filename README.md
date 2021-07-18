@@ -1,5 +1,5 @@
 # FTOGL4
-Opengl 4.0 port of FTOGL 
+FTOGL$ is Opengl 4.0 port of FTOGL. Currently it supports outline, polygon and extrude fonts. 
 
 # To compile and run 
 
