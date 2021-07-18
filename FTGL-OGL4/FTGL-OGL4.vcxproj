@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{98D8CABF-DE12-44C9-8527-94574F9EF3A0}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>FTGLOGL4</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>.\..\glm-0.9.9.8;.\..\CcG3DVec;.\..\glad\include;.\..\FreeType\include;.\..\CcGPUCtrlLib\CcGPUCtrl;./include;./include/FTGL;./include/FTGlyph;./include/FTFont-Impl;./include/FTGlyph-Impl;./include/FTLayout;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="framework.h" />
+    <ClInclude Include="Include\config.h" />
+    <ClInclude Include="Include\FTCharmap.h" />
+    <ClInclude Include="Include\FTCharToGlyphIndexMap.h" />
+    <ClInclude Include="Include\FTCleanup.h" />
+    <ClInclude Include="Include\FTContour.h" />
+    <ClInclude Include="Include\FTFace.h" />
+    <ClInclude Include="Include\FTFont-Impl\FTBitmapFontImpl.h" />
+    <ClInclude Include="Include\FTFont-Impl\FTBufferFontImpl.h" />
+    <ClInclude Include="Include\FTFont-Impl\FTExtrudeFontImpl.h" />
+    <ClInclude Include="Include\FTFont-Impl\FTFontImpl.h" />
+    <ClInclude Include="Include\FTFont-Impl\FTOutlineFontImpl.h" />
+    <ClInclude Include="Include\FTFont-Impl\FTPixmapFontImpl.h" />
+    <ClInclude Include="Include\FTFont-Impl\FTPolygonFontImpl.h" />
+    <ClInclude Include="Include\FTFont-Impl\FTTextureFontImpl.h" />
+    <ClInclude Include="Include\FTFont-Impl\FTTriangleExtractorFontImpl.h" />
+    <ClInclude Include="Include\FTFont\FTBufferFont.h" />
+    <ClInclude Include="Include\FTFont\FTFont.h" />
+    <ClInclude Include="Include\FTFont\FTGLBitmapFont.h" />
+    <ClInclude Include="Include\FTFont\FTGLExtrdFont.h" />
+    <ClInclude Include="Include\FTFont\FTGLOutlineFont.h" />
+    <ClInclude Include="Include\FTFont\FTGLPixmapFont.h" />
+    <ClInclude Include="Include\FTFont\FTGLPolygonFont.h" />
+    <ClInclude Include="Include\FTFont\FTGLTextureFont.h" />
+    <ClInclude Include="Include\FTFont\FTGLTriangleExtractorFont.h" />
+    <ClInclude Include="Include\FTGlyph-Impl\FTBitmapGlyphImpl.h" />
+    <ClInclude Include="Include\FTGlyph-Impl\FTBufferGlyphImpl.h" />
+    <ClInclude Include="Include\FTGlyph-Impl\FTExtrudeGlyphImpl.h" />
+    <ClInclude Include="Include\FTGlyph-Impl\FTGlyphImpl.h" />
+    <ClInclude Include="Include\FTGlyph-Impl\FTOutlineGlyphImpl.h" />
+    <ClInclude Include="Include\FTGlyph-Impl\FTPixmapGlyphImpl.h" />
+    <ClInclude Include="Include\FTGlyph-Impl\FTPolygonGlyphImpl.h" />
+    <ClInclude Include="Include\FTGlyph-Impl\FTTextureGlyphImpl.h" />
+    <ClInclude Include="Include\FTGlyph-Impl\FTTriangleExtractorGlyphImpl.h" />
+    <ClInclude Include="Include\FTGlyphContainer.h" />
+    <ClInclude Include="Include\FTGlyph\FTBitmapGlyph.h" />
+    <ClInclude Include="Include\FTGlyph\FTBufferGlyph.h" />
+    <ClInclude Include="Include\FTGlyph\FTExtrdGlyph.h" />
+    <ClInclude Include="Include\FTGlyph\FTGlyph.h" />
+    <ClInclude Include="Include\FTGlyph\FTOutlineGlyph.h" />
+    <ClInclude Include="Include\FTGlyph\FTPixmapGlyph.h" />
+    <ClInclude Include="Include\FTGlyph\FTPolyGlyph.h" />
+    <ClInclude Include="Include\FTGlyph\FTTextureGlyph.h" />
+    <ClInclude Include="Include\FTGlyph\FTTriangleExtractorGlyph.h" />
+    <ClInclude Include="Include\FTGL\FTBBox.h" />
+    <ClInclude Include="Include\FTGL\FTBuffer.h" />
+    <ClInclude Include="Include\FTGL\ftgl.h" />
+    <ClInclude Include="Include\FTGL\FTPoint.h" />
+    <ClInclude Include="Include\FTInternals.h" />
+    <ClInclude Include="Include\FTLayout\FTLayout.h" />
+    <ClInclude Include="Include\FTLayout\FTLayoutImpl.h" />
+    <ClInclude Include="Include\FTLayout\FTSimpleLayout.h" />
+    <ClInclude Include="Include\FTLayout\FTSimpleLayoutImpl.h" />
+    <ClInclude Include="Include\FTLibrary.h" />
+    <ClInclude Include="Include\FTList.h" />
+    <ClInclude Include="Include\FTSize.h" />
+    <ClInclude Include="Include\FTUnicode.h" />
+    <ClInclude Include="Include\FTVector.h" />
+    <ClInclude Include="Include\FTVectoriser.h" />
+    <ClInclude Include="pch.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="FTGL-OGL4.cpp" />
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\FTCharmap.cpp" />
+    <ClCompile Include="src\FTCleanup.cpp" />
+    <ClCompile Include="src\FTContour.cpp" />
+    <ClCompile Include="src\FTFace.cpp" />
+    <ClCompile Include="src\FTFont\FTBitmapFont.cpp" />
+    <ClCompile Include="src\FTFont\FTBufferFont.cpp" />
+    <ClCompile Include="src\FTFont\FTExtrudeFont.cpp" />
+    <ClCompile Include="src\FTFont\FTFont.cpp" />
+    <ClCompile Include="src\FTFont\FTFontGlue.cpp" />
+    <ClCompile Include="src\FTFont\FTOutlineFont.cpp" />
+    <ClCompile Include="src\FTFont\FTPixmapFont.cpp" />
+    <ClCompile Include="src\FTFont\FTPolygonFont.cpp" />
+    <ClCompile Include="src\FTFont\FTTextureFont.cpp" />
+    <ClCompile Include="src\FTFont\FTTriangleExtractorFont.cpp" />
+    <ClCompile Include="src\FTGL.cpp" />
+    <ClCompile Include="src\FTGlyphContainer.cpp" />
+    <ClCompile Include="src\FTGlyph\FTBitmapGlyph.cpp" />
+    <ClCompile Include="src\FTGlyph\FTBufferGlyph.cpp" />
+    <ClCompile Include="src\FTGlyph\FTExtrudeGlyph.cpp" />
+    <ClCompile Include="src\FTGlyph\FTGlyph.cpp" />
+    <ClCompile Include="src\FTGlyph\FTGlyphGlue.cpp" />
+    <ClCompile Include="src\FTGlyph\FTOutlineGlyph.cpp" />
+    <ClCompile Include="src\FTGlyph\FTPixmapGlyph.cpp" />
+    <ClCompile Include="src\FTGlyph\FTPolygonGlyph.cpp" />
+    <ClCompile Include="src\FTGlyph\FTTextureGlyph.cpp" />
+    <ClCompile Include="src\FTGlyph\FTTriangleExtractorGlyph.cpp" />
+    <ClCompile Include="src\FTGL\FTBuffer.cpp" />
+    <ClCompile Include="src\FTGL\FTPoint.cpp" />
+    <ClCompile Include="src\FTLayout\FTLayout.cpp" />
+    <ClCompile Include="src\FTLayout\FTLayoutGlue.cpp" />
+    <ClCompile Include="src\FTLayout\FTSimpleLayout.cpp" />
+    <ClCompile Include="src\FTLibrary.cpp" />
+    <ClCompile Include="src\FTSize.cpp" />
+    <ClCompile Include="src\FTVectoriser.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
