@@ -1,9 +1,20 @@
 # FTOGL4
 FTOGL4 is Opengl 4.0 port of FTGL. Currently, it supports outline, polygon and extrude fonts.
 And uses reduced version of OpenGL related Libraries provided by ConsCAD for Opensource. (ConsCAD is a non-opensource software solution for Architectures).
-# To compile and run 
 
+# Pre-requisites
+1. MS Windows 10
+2. MS studio 2019 community version x64 (or any other)
+3. Hardware and driver to support OpenGL4.
+4. External dependancies. FTOGL4 uses opensource Libraries: glfw, glm, freetype and glad
+5. Window fonts available at location "C:\WINDOWS\Fonts\arial.ttf". 
+(if not, then change fontFilePathL = "C:\\WINDOWS\\Fonts\\arial.ttf" in file 'TestPrg.cpp' line No. 114 appropriately)
+
+# To compile and run 
 ## Directory Structure
+Following should be the directory structure after cloning the repository. glfw, glm, freetype and glad are to be created as folders in the root directory. Requires download and copy into this folders appropriately.
+(If any of these library already availbale in your machine and want to use it then please change the path setting accordingly in the project)
+ 
 ```bash
 FTOGL4
 ├── CcG3DVec
@@ -17,27 +28,9 @@ FTOGL4
 ├── glm
 └── readme.md
 ```
-glfw, glm, freetype and glad are to be created as folders in the root directory. Requires download and copy into this folders appropriately.
-(If any of these library already availbale in your machine and want to use it then please change the path setting accordingly in the project)
 
 
-## Pre-requisite
-1. MS Windows 10
-2. MS studio 2019 community version x64 (or any other)
-3. Hardware and driver to support OpenGL4.
-4. External dependancies. FTOGL4 uses opensource Libraries: glfw, glm, freetype and glad
-5. Window fonts available at location "C:\WINDOWS\Fonts\arial.ttf". 
-(if not, then change fontFilePathL = "C:\\WINDOWS\\Fonts\\arial.ttf" in file 'TestPrg.cpp' line No. 114 appropriately)
-
-
-## Download
-1. FTGL-OGL4 from github (Clone this repository or click on download zip)
-2. Glfw (glfw-3.3.4.bin.WIN64)
-3. Glm (glm-0.9.9.8 - Header include files, So no need to compile)
-4. Freetype
-5. Glad (Source and header files are included in the main project. No need for separate compile)
-
-## Download (detailed)
+## Download (dependencies) 
 1. glfw
 (We have used pre-compiled binaries for 64-bit Windows "glfw-3.3.4.bin.WIN64")
 Download 64-bit Windows pre-compiled binaries from  https://www.glfw.org/download.html 
@@ -115,7 +108,7 @@ FTOGL4-MS19.sln has the nesessary path set for the compile and link,
 
 
 
-### Set Path 
+### Set Path (optional) 
 Project -> Property -> c/c++ -> General : Additional include Directories
 
 1. CcG3DVec
